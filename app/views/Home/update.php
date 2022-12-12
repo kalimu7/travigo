@@ -12,7 +12,10 @@
 <body>
            
     <div class="container">
-        <form action="http://localhost/5th%20BRIEF/public/Admin/updateto/" method="POST" enctype="multipart/form-data" class="mx-auto" style="width:400px;">
+        <?php 
+                while($d = mysqli_fetch_assoc($data["db"])){
+            ?>
+        <form action="http://localhost/5th%20BRIEF/public/Admin/updateto/<?= $d['id'] ?>" method="POST" enctype="multipart/form-data" class="mx-auto" style="width:400px;">
             <h2>Update Your destination</h2>
            
             <?php
@@ -23,9 +26,7 @@
                 echo '<span class="text-success">'.$data['message'].'</span>'; 
             }
              ?> 
-            <?php 
-                while($d = mysqli_fetch_assoc($data["db"])){
-            ?>
+            
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">destination</label>
                 <input type="text" value="<?= $d['destination'] ?>" name="dest" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -43,9 +44,10 @@
                 <input type="file" name="image" class="form-control" id="exampleInputPassword1">
             </div>
            
-            <button type="submit" name="submit" class="btn btn-primary">Add Your new Destination</button>
-            <?php }; ?>
+            <button type="submit" name="submit" class="btn btn-primary">Update Your Destination</button>
+           
         </form>
+        <?php }; ?>
     </div>
 
 </body>

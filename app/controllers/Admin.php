@@ -19,14 +19,41 @@ require_once '../app/core/Controller.php';
             $this->view('home/update',['db' => $array]);
         }
         public function updateto($id){
-            // $to = $this->model('ProductModel');
-            // $too = $this->set($destination,$description,$price,$image,$id);
-            echo 'hello world the id = '.$id;
+            $to = $this->model('ProductModel');
+            $destination = $_POST['dest'];
+            $description = $_POST['desc'];
+            $price = $_POST['price'];
+            $image = $_FILES['image']['name'];
+            $imagetmp = $_FILES['image']['tmp_name'];
+            $Folder = '../public/assets/'.$image;
+            if(empty($image)){
+                $too = $to->setimage($destination,$description,$price,$id);
+
+            }else{
+                $too = $to->set($destination,$description,$price,$image,$id);
+                move_uploaded_file($imagetmp,$Folder);   
+            }
+            header('Location:http://localhost/5th%20BRIEF/public/Admin/crud');
+            // $too = $to->set($destination,$description,$price,$image,$id);
+            // echo 'hello world the id = '.$id;
+        }
+        public function delete($id){
+            $d = $this->model('ProductModel');
+            $d->delete($id);
+            header('Location:http://localhost/5th%20BRIEF/public/Admin/crud');
+        }
+        
+        public function log(){
+            $this->view('Home/login');
+        }
+        public function login(){
+            $name = $_POST["naem"];
+            $email = $_POST["pass"];
+            
 
 
         }
         
-
     }
 
 
