@@ -138,8 +138,8 @@ table.table td i {
         <div class="table-wrapper">
             <div class="table-title">
                 <div class="row">
-                    <div class="col-sm-8"><h2>Add New Destination</h2></div> <br>
-                    <a class="btn-danger" href="<?= BASE_URL ?>Product/productForm">ADD</a>
+                    <div class="col-sm-11"><h2>Add New Destination</h2></div> <br>
+                    <a class="btn btn-danger " href="<?= BASE_URL ?>Product/productForm">ADD</a>
                 </div>
             </div>
             <table class="table table-striped table-hover table-bordered">
@@ -157,25 +157,24 @@ table.table td i {
                     <?php while($da = mysqli_fetch_assoc($data)){ ?>
                     <tr>
                         <td>
-                            <?= $da['price'] ?>
+                            <?= $da['id'] ?>
                         </td>
                         <td>
                         <img src="<?= BASE_URL_image ?><?php echo $da['image']; ?>" width="100px" >
                         </td>
                         <td>
-                        <?= $da['price'] ?>
-                        
-                        </td>
-                        <td>
                         <?= $da['destination'] ?>
+                        
                         </td>
                         <td>
                         <?= $da['description'] ?>
                         </td>
-                        <!-- <td>USA</td> -->
+                        <td>
+                        <?= $da['price'] ?>
+                        </td>
                         <td>
                             <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
-                            <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            <a href="<?= BASE_URL ?>Admin/update/<?= $da['id'] ?>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
                             <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
                         </td>
                     </tr>
