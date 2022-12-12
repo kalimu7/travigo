@@ -47,11 +47,22 @@ require_once '../app/core/Controller.php';
             $this->view('Home/login');
         }
         public function login(){
-            $name = $_POST["naem"];
-            $email = $_POST["pass"];
-            
+            if(isset($_POST['eden'])){
+                $name = $_POST['naem'];
+                $pass = $_POST['pass'];   
+            }
+                     
+            $log = $this->model("User");
+            $a = $log->check($name,$pass);
+            if($a == 1){
+                $msg =  "login succefully";
+            }elseif($a == 2){
+                $msg = "password not correct";
+            }elseif($a == 3){
+                $msg =  "user doesnt exist";
+            }
 
-
+            $this->view('Home/login',['msg' => $msg]);
         }
         
     }
