@@ -1,3 +1,8 @@
+<?php
+if(!isset($_SESSION["login"])){
+    header("Location:http://localhost/5th%20BRIEF/public/home/index");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 

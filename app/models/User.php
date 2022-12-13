@@ -9,12 +9,14 @@ class User extends Connection{
         $us = mysqli_fetch_assoc($users);
         if(mysqli_num_rows($users )>0){
             if($us['password'] == $password){
-                return 1; //successfully;
+                session_start();
+                return 1;
+                //successfully;
             }else{
                 return 2;//error;
             }
         }else{
-            return 3;//now user with this name;
+            return 3;//no user with this name;
         }
         
     }

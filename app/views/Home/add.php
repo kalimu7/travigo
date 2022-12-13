@@ -1,3 +1,8 @@
+<?php
+if(!isset($_SESSION["login"])){
+    header("Location:http://localhost/5th%20BRIEF/public/home/index");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,7 +45,8 @@
                 <input type="file" name="image" class="form-control" id="exampleInputPassword1">
             </div>
            
-            <button type="submit" name="submit" class="btn btn-primary">Add Your new Destination</button>
+            <button type="submit" name="submit" class="btn btn-primary">Add Your new Destination</button> <br> <br>
+            <a class="btn btn-danger" href="http://localhost/5th%20BRIEF/public/Admin/crud">back to dashboard</a>
         </form>
     </div>
 

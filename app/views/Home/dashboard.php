@@ -1,3 +1,8 @@
+<?php
+if(!isset($_SESSION["login"])){
+    header("Location:http://localhost/5th%20BRIEF/public/home/index");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -137,9 +142,10 @@ table.table td i {
     <div class="table-responsive">
         <div class="table-wrapper">
             <div class="table-title">
-                <div class="row">
-                    <div class="col-sm-11"><h2>Add New Destination</h2></div> <br>
-                    <a class="btn btn-danger " href="<?= BASE_URL ?>Product/productForm">ADD</a>
+                <div class="row justify-content-between">
+                    <div class="col-sm-8"><h2>Add New Destination</h2></div> <br>
+                    <a class="btn btn-danger " href="http://localhost/5th%20BRIEF/public/Admin/logout">Log Out</a>
+                    <a class="btn btn-primary " href="<?= BASE_URL ?>Product/productForm">ADD</a>
                 </div>
             </div>
             <table class="table table-striped table-hover table-bordered">

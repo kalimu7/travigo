@@ -1,0 +1,383 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+    
+}body{
+    overflow-x: hidden;
+}
+
+:root{
+	--bg-color: #fff;
+	--text-color: #221314;
+	--second-color: #5a7184;
+	--main-color: #6e54fa;
+	--big-font: 6rem;
+	--h2-font: 3rem;
+	--p-font: 1.1rem;
+}
+body{
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+
+header{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	padding: 30px 18%;
+	transition: ease .40s;
+}
+.logo{
+	font-size: 35px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: var(--bg-color);
+}
+.navbar{
+	display: flex;
+}
+.navbar a{
+	color: var(--bg-color);
+	font-size: var(--p-font);
+	font-weight: 500;
+	padding: 10px 22px;
+	border-radius: 4px;
+	transition: ease .40s;
+}
+.navbar a:hover{
+	background: var(--bg-color);
+	color: var(--text-color);
+	box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+	border-radius: 4px;
+}
+#menu-icon{
+	color: var(--bg-color);
+	font-size: 35px;
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
+}
+
+section{
+	padding: 80px 18%;
+}
+.home{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(../img/background.jpg);
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	align-items: center;
+}
+.home-text h1{
+	font-size: var(--big-font);
+	line-height: 1.2;
+	color: var(--bg-color);
+	font-family: 'Paytone One', sans-serif;
+	letter-spacing: 4px;
+	margin-bottom: 20px;
+}
+.home-text p{
+	color: #ffffffbf;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 38px;
+	margin-bottom: 50px;
+}
+.home-btn{
+	display: inline-block;
+	font-size: 16px;
+	padding: 15px 30px;
+	background: #ffffffbf;
+	color: var(--main-color);
+	border-radius: 4px;
+	transition: ease .40s;
+}
+.home-btn:hover{
+	background: var(--bg-color);
+	transform: scale(1.1);
+}
+header.sticky{
+	background: var(--bg-color);
+	padding: 10px 18%;
+	box-shadow: rgba(33,35,38, 0.1) 0px 10px 10px -10px;
+}
+
+/* *****************************tours container******************************* */
+.tours{
+    height: 290vh;
+    width: 100%;
+    background-color: #F2F3F9;
+}
+.tourscards{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    column-gap: 50px;
+    row-gap: 50px;
+    justify-content: center;
+}
+.card{
+    background-color: white;
+    height: 440px;
+    width: 300px;
+    border-radius: 15px;
+}
+.card .imgdis{
+    height: 180px;
+    width: 100%;
+    
+}
+
+.im2{
+    background-image: url(../img/2.jpg);
+}
+.im3{
+    background-image: url(../img/3.jpg);
+}
+.im4{
+    background-image: url(../img/4.jpg);
+}
+.im5{
+    background-image: url(../img/5.jpg);
+}
+.im6{
+    background-image: url(../img/6.jpg);
+}
+.im7{
+    background-image: url(../img/7.jpg);
+}
+.im8{
+    background-image: url(../img/8.jpg);
+}
+.im9{
+    background-position: top;
+    background-image: url(../img/9.jpg);
+}
+
+.card h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.tours .btitle{
+    text-align: center;
+    color: #330867;
+    padding-top: 10px;
+}
+.tours hr{
+    width: 60px;
+    
+    margin: 10px auto;
+}
+.tours .stitle{
+    text-align: center;
+    color: #9B51E0;
+    padding-bottom: 20px;
+}
+.card h3{
+    text-align: center;
+}
+.card h4{
+    text-align: center;
+}
+.card h4 i{
+    color: #6e54fa;
+}
+/* .card p{
+    text-decoration: underline;
+} */
+/* *****************************end tours container******************************* */
+
+#contact{
+	background: var(--main-color);
+}
+.main{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer{
+	padding: 20px 0;
+}
+.list{
+	width: 25%;
+}
+.list h4{
+	font-size: 21px;
+	color: var(--bg-color);
+	margin-bottom: 30px;
+	position: relative;
+}
+.list h4::before{
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 60px;
+	left: 0;
+	bottom: -10px;
+	background: var(--bg-color);
+}
+.list ul li:not(last-child) {
+	margin-bottom: 16px;
+}
+.list ul li a{
+	color: #ffffffbf;
+	font-size: var(--p-font);
+	display: block;
+	transition: .3s;
+}
+.list ul li a:hover{
+	color: var(--bg-color);
+	transform: translateX(14px);
+}
+.list .social a{
+	height: 40px;
+	width: 40px;
+	background: var(--bg-color);
+	color: var(--main-color);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 21px;
+	border-radius: 15px;
+	transition: .3s;
+	margin-right: 10px;
+}
+.list .social a:hover{
+	transform: scale(1.1);
+}
+.end-text{
+	text-align: center;
+	padding-top: 90px;
+}
+.end-text p{
+	color: var(--bg-color);
+	font-size: 14px;
+	letter-spacing: 2px;
+}
+
+@media (max-width: 1400px){
+	header{
+		padding: 17px 3%;
+		transition: .2s;
+	}
+	header.sticky{
+		padding: 10px 3%;
+		transition: .2s;
+	}
+	section{
+		padding: 80px 3%;
+		transition: .2s;
+	}
+	:root{
+		--big-font: 4.5rem;
+	  --h2-font: 2.3rem;
+	  --p-font: 1rem;
+	  transition: .2s;
+	}
+}
+
+@media (max-width: 1040px){
+	#menu-icon{
+		display: block;
+	}
+	.stick #menu-icon{
+		color: var(--text-color);
+	}
+	.home{
+		height: 88vh;
+	}
+	.navbar{
+		position: absolute;
+		top: 0;
+		right: -100%;
+		width: 270px;
+		height: 120vh;
+		background: #1067cc;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 150px 30px;
+		transition: 0.5s all;
+	}
+	.navbar a{
+		display: block;
+		margin: 1.2rem 0;
+	}
+	.sticky .navbar a{
+		color: var(--bg-color);
+	}
+	.navbar a:hover{
+		color: var(--text-color);
+	}
+	.open{
+		right: 0;
+	}
+	.list{
+		width: 50%;
+		margin-bottom: 12px;
+	}
+}
+
+@media (max-width: 575px){
+	.list{
+		width: 100%;
+	}
+	.newsletter form{
+		width: 350px;
+	}
+	:root{
+		--big-font: 3.8rem;
+	  --h2-font: 1.8rem;
+	  transition: .2s;
+	}
+	.text{
+		text-align: center;
+	}
+	.home{
+		height: 85vh;
+		transition: .2s;
+	}
+}
+
+@media screen and (max-width : 1022px) {
+    .tourscards{
+        grid-template-columns: auto auto;
+    }
+    .tours{
+        height: 2400px;
+    }
+} 
+
+@media screen and (max-width : 667px) {
+    .tourscards{
+        grid-template-columns: auto;
+    }
+    .tours{
+        height: 4200px;
+    }
+}
+@media (max-width: 399px){
+	.card{
+		margin-bottom: -10px;
+	}
+}
+/*
+@media screen and (max-width : 714px) {
+    .tourscards{
+        grid-template-columns: auto;
+    }
+
+} */

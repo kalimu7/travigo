@@ -4,7 +4,7 @@
 require_once '../app/core/Controller.php';
     class Admin extends controller{
 
-
+        
 
         
         public function crud(){
@@ -56,6 +56,9 @@ require_once '../app/core/Controller.php';
             $a = $log->check($name,$pass);
             if($a == 1){
                 $msg =  "login succefully";
+                $_SESSION["login"] =  true;
+                $_SESSION["name"] =  $name;
+                header("Location:http://localhost/5th%20BRIEF/public/");
             }elseif($a == 2){
                 $msg = "password not correct";
             }elseif($a == 3){
@@ -63,6 +66,10 @@ require_once '../app/core/Controller.php';
             }
 
             $this->view('Home/login',['msg' => $msg]);
+        }
+        public function logout(){
+            $out = $this->model('logout');
+            $out->Logout();
         }
         
     }

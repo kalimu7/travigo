@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Travigo - Travel for everyone</title>
 	<link rel="stylesheet" type="text/css" href="http://localhost/5th%20BRIEF/public/css/style.css">
+
 	<link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -32,7 +33,6 @@
 	<section class="home" id="home">
 		<div class="home-text">
 			<h1>Travigo <br> Travel</h1>
-    		<a href="http://localhost/5th%20BRIEF/public/Admin/logout">Log Out</a>
 			<p>Explore our trips and live The Good Life with Travigo <br> Tours that make you fall in love with the world.</p>
 			<a href="#" class="home-btn">Let's go now</a>
 		</div>
@@ -40,107 +40,49 @@
 
 	<!--container--->
 	<section class="container">
-		<div class="text">
-			<h2>Start Your Vacation <br> with Lots of Services!</h2>
-		</div>
 
 		<div class="row-items">
-			<div class="container-box">
-				<div class="container-img">
-					<img src="../../public/img/trip1.png">
+			<div class="container">
+				
+				<div class="title">
+					<h2>Who are we</h2>
 				</div>
-				<h4>Ship Cruises</h4>
-				<p>150 Properties</p>
+				<br>
+				<p>Founded in 2005 by three university friends in Düsseldorf (Germany), trivago has since become a leading global accommodation search website. We are focused on reshaping the way millions of travelers search for and compare hotels and other accommodations. Part of Expedia Group (NASDAQ: TRVG), trivago’s mission is to become your companion to experience our world. </p>
 			</div>
-
-			<div class="container-box">
-				<div class="container-img">
-					<img src="../../public/img/trip2.png">
-				</div>
-				<h4>Food Tours</h4>
-				<p>150 Properties</p>
-			</div>
-
-			<div class="container-box">
-				<div class="container-img">
-					<img src="../../public/img/trip3.png">
-				</div>
-				<h4>Summer Rest</h4>
-				<p>150 Properties</p>
+			<div class="container-img-b">
+				<img src="../../public/img/tourism.jpg">
 			</div>
 
 		</div>
 	</section>
 
-	<!--Package section--->
-	<section class="package" id="package">
-		<div class="title">
-			<h2>Our Upcoming <br> Tour Package</h2>
-		</div>
-
-		<div class="package-content">
-			<div class="box">
-				<div class="thum">
-					<img src="../../public/img/img1.png">
-					<h3>$499</h3>
-				</div>
-
-				<div class="dest-content">
-					<div class="location">
-						<h4>London</h4>
-						<p>4h - 5h</p>
-					</div>
-					<div class="stars">
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-					</div>
-				</div>
+	<!--container--->
+	<section class="container">
+		<div class="row-items">
+			<div class="container-img-b">
+				<img src="../../public/img/maroc.jpg">
 			</div>
-
-			<div class="box">
-				<div class="thum">
-					<img src="../../public/img/img2.png">
-					<h3>$499</h3>
-				</div>
-
-				<div class="dest-content">
-					<div class="location">
-						<h4>New York</h4>
-						<p>4h - 5h</p>
-					</div>
-					<div class="stars">
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-					</div>
-				</div>
+			<div class="container-box">
+				<p>we organize perfect trips all over Morocco.
+					We want you to enjoy and be moved by your experience here, whether it’s your first time, or a return trip.
+					
+					We want you to see our beautiful country in the way you want to.
+					
+					We will design a trip that suits the way you travel, and what you value.
+					
+					Do you want Luxury? Adventure? Simplicity? There are so many ways to focus your time here, let’s choose the right things for you.
+					
+					Throughout, OmegaTours takes care of everything, from the day you land, until the moment we say goodbye at the airport.
+					
+					We handle all the logistics: in-country travel planning; book accommodations; and provide comfortable, private transportation.
+					
+					But the most important thing is our people: Omega’s knowledgeable, friendly guides and drivers know and love this land, and love to share it with visitors.
+					
+					We also have a wonderful network of people to host and help you go deeper in what you care to see: the freedom to explore in balance with your safety.
+					Come and see Morocco with us! You won’t be disappointed. </p>
 			</div>
-
-			<div class="box">
-				<div class="thum">
-					<img src="../../public/img/img3.png">
-					<h3>$499</h3>
-				</div>
-
-				<div class="dest-content">
-					<div class="location">
-						<h4>Dubai</h4>
-						<p>4h - 5h</p>
-					</div>
-					<div class="stars">
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-					</div>
-				</div>
-			</div>
+			
 
 		</div>
 	</section>
@@ -148,44 +90,26 @@
 	<!--destination section--->
 	<section class="destination" id="destination">
 		<div class="title">
-			<h2>Our Most Popular <br> Destination!</h2>
+			<h2>Find out more</h2>
 		</div>
 
 		<div class="destination-content">
-			<div class="col-content">
+			<div class="blog-content">
 				<img src="../../public/img/img-1.jpg">
-				<h5>Machu Picchu</h5>
-				<p>PERU</p>
+				<h5>Careers at trivago</h5>
+				<p>Find out more about our open roles, working culture, benefits, D&I approach and how we recruit.</p>
 			</div>
 
-			<div class="col-content">
+			<div class="blog-content">
 				<img src="../../public/img/img-2.jpg">
-				<h5>Machu Picchu</h5>
-				<p>PERU</p>
+				<h5>Tech blog</h5>
+				<p>Get insight into our projects, prototypes and tech stack from our developers!</p>
 			</div>
 
-			<div class="col-content">
+			<div class="blog-content">
 				<img src="../../public/img/img-3.jpg">
-				<h5>Machu Picchu</h5>
-				<p>PERU</p>
-			</div>
-
-			<div class="col-content">
-				<img src="../../public/img/img-4.jpg">
-				<h5>Machu Picchu</h5>
-				<p>PERU</p>
-			</div>
-
-			<div class="col-content">
-				<img src="../../public/img/img-5.jpg">
-				<h5>Machu Picchu</h5>
-				<p>PERU</p>
-			</div>
-
-			<div class="col-content">
-				<img src="../../public/img/img-6.jpg">
-				<h5>Machu Picchu</h5>
-				<p>PERU</p>
+				<h5>trivago blog</h5>
+				<p>A central source of actionable insights into hotel marketing, technology, and trends.</p>
 			</div>
 
 		</div>
