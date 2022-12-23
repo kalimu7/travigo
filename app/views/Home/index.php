@@ -21,7 +21,7 @@
 
 		<ul class="navbar">
 			<li><a href="http://localhost/5th%20BRIEF/public/home/index">Home</a></li>
-			<li><a href="http://localhost/5th%20BRIEF/public/home/tour">Tours</a></li>
+			<li><a href="./tour">Tours</a></li>
 			<li><a href="http://localhost/5th%20BRIEF/public/home/about">About</a></li>
 			<li><a href="http://localhost/5th%20BRIEF/public/home/contact">Contact Us</a></li>
 			<li><a href="http://localhost/5th%20BRIEF/public/Admin/log">log in</a></li>

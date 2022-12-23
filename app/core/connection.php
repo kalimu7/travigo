@@ -10,11 +10,10 @@
              $this->servername="localhost";
              $this->username="root";
              $this->password="";
-             $this->dbname="testoop";
+             $this->dbname="hotel";
              $conn = mysqli_connect($this->servername,$this->username,$this->password,$this->dbname); 
              return $conn; 
          }
-
         }
 
 ?>

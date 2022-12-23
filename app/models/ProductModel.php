@@ -3,9 +3,14 @@
     require '../app/core/connection.php';
    
     class ProductModel extends Connection{
+        
         public function insert($destination,$description,$price,$image){
-            $check = mysqli_query($this->connect(),"INSERT INTO `travel` (`id`, `destination`, `price`, `description`, `image`) VALUES ('', '$destination', '$price', '$description', '$image')");
-            
+            $con  = $this->connect();
+            // $check = mysqli_query($this->connect(),"INSERT INTO `travel` (`id`, `destination`, `price`, `description`, `image`) VALUES ('', '$destination', '$price', '$description', '$image')");
+            $stm = $con->prepare("INSERT INTO travel (`destination`, `price`, `description`, `image`) VALUES (?,?,?,?)");
+            $stm->bind_param("ssss",$destination, $price, $description, $image);
+            $stm->execute();
+            $stm->close();
         }
         public function set($destination,$description,$price,$image,$id){
             $setter = mysqli_query($this->connect(),"UPDATE `travel` SET `destination`='$destination',`price`='$price',`description`='$description',`image`='$image' WHERE `id`=$id ");
